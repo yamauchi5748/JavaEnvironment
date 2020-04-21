@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  java:
+    build:
+      context: ./docker/java
+    volumes:
+      - "./workspace:/app"
+    tty: true
